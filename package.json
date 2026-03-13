@@ -1,0 +1,14 @@
+{
+  "name": "social-pivot-root",
+  "version": "1.0.0",
+  "description": "Root entry point for Social Pivot project",
+  "scripts": {
+    "install:all": "npm install --prefix social-main/Social-Pivot-main/backend && npm install --prefix social-main/Social-Pivot-main/frontend",
+    "start": "concurrently \"npm run start:dev --prefix social-main/Social-Pivot-main/backend\" \"npm run dev --prefix social-main/Social-Pivot-main/frontend\"",
+    "backend": "npm run start:dev --prefix social-main/Social-Pivot-main/backend",
+    "frontend": "npm run dev --prefix social-main/Social-Pivot-main/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
